@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">Logo</h2>
+      <nav class="navbar">
+        <a href="/home" target="_blank">Home</a>
+        <a href="/about" target="_blank">About</a>
+        <a href="/services" target="_blank">Services</a>
+        <a href="/contact" target="_blank">Contact</a>
+        <button class="Login" onclick="toggleLogin()">Login</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <form class="signUp">
+
+          <h3>Create Your Account</h3>
+          <p>Sign Up by creating your account.</p>
+
+          <span class="icon-close" onclick="toggleDislogin()"><ion-icon name="close-outline"></ion-icon></span>
+
+          <div class="input-box">
+            <input class="w100" type="email" required autocomplete='off'>
+            <label>Email</label>
+          </div>
+
+          <div class="input-box">
+            <input type="password" required autocomplete='off' id="password">
+            <label>Password</label>
+            <span onclick=myFunction() class="eye"><ion-icon name="eye-off-outline"></ion-icon></span>
+          </div>
+
+          <div class="input-box">
+            <input type="password" required autocomplete='off' id="password2">
+            <label>Confirm Password</label>
+            <span onclick=myFunction2() class="eye2"><ion-icon name="eye-off-outline"></ion-icon></span>
+          </div>
+
+          <div class="remember-forgot">
+            <label><input type="checkbox">I agree to the terms & conditions</label>
+          </div>
+
+          <button class="form-btn dx" type="submit">Sign Up</button>
+
+          <div class="sx">
+            Already have an account? <a href="#" class="log-in">Login</a>
+          </div>
+
+          
+
+      </form>
+
+      <form class="signIn">
+
+          <h3>Welcome Back!</h3>
+
+          <span class="icon-close" onclick="toggleDislogin()"><ion-icon name="close-outline"></ion-icon></span>
+
+
+          <div class="input-box">
+            <input type="email" autocomplete='off' required>
+            <label>Username</label>
+          </div>
+
+          <div class="input-box">
+            <input type="password" required id="password3">
+            <label>Password</label>
+            <span onclick=myFunction3() class="eye3"><ion-icon name="eye-off-outline"></ion-icon></span>
+
+          </div>
+
+          <div class="something">
+            <label><input type="checkbox" style="width: 13px;">Remember me</label>
+            <a href="/forgotpasswordpage" target="_blank">Forgot password?</a>
+        </div>
+          
+          <button class="form-btn dx" type="submit">Log In</button>
+
+          <p>- OR -</p>
+
+          <div class="otherloginoptions">
+            Or continue with
+            <span>
+                <a href="/gloginpage" target="_blank"><img
+                    width="16px"
+                    src="google-icon-logo-svgrepo-com.svg"
+                    alt=""
+                    class="gg" /></a>
+                
+                    <a href="/fbloginpage" target="_blank"><img
+                    class="fb"
+                    width="16px"
+                    src="facebook.svg"
+                    alt="" /></a>
+                
+                    <a href="/Xloginpage" target="_blank"><img 
+                    src="whatsapp.svg"
+                    width="16px"
+                    class="wp" 
+                    alt=""/></a>
+            </span>
+        </div>
+
+          <div class="dx">
+            Don't have an account? <a href="#" class="sign-up">Sign Up</a>
+        </div>
+
+      </form>
+
+    </main>
+
+    <script src="script2.js"></script>
+
+  </body>
+</html>
